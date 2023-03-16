@@ -10,7 +10,13 @@ body {
     width: 100%;
     margin: 0 auto;
 }
-
+table{
+    font-size: 5rem;
+    min-width: 20rem;
+    max-width: 50rem;
+    text-align: center;
+    margin: 0 auto;
+}
 header{
     border-bottom: 1px #2a2a2a solid;
 }
@@ -278,11 +284,25 @@ h2{
 }
 
 .seccionNosotros{
-    max-width: 70%;
+    max-width: 80%;
     padding: 0 3rem;
     margin: 10rem auto;
     border: 0.5rem solid;
     border-image: linear-gradient(to bottom, rgba(0,0,0,0), #c9e265, rgba(0,0,0,0))1 100%;
+}
+
+.seccionNosotros p{
+    text-align: justify;
+}
+
+.seccionNosotros h2{
+    margin-bottom: 5rem;
+}
+
+
+.seccionNosotros div{
+    margin-bottom: 3rem;
+    
 }
 .alignItems{
     display: flex;
