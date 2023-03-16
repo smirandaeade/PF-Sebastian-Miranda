@@ -309,8 +309,9 @@ h2{
     width: 90%;
     text-align: start;
 }
-.formulario input, textarea{
+.formulario input, .formulario textarea{
     width: 90%;
+    margin: 0 auto;
     color: black;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
