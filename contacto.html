@@ -115,29 +115,36 @@
         <h1 class="tituloH1">
             Contacto
         </h1>
-        <form class="formulario container">
-            <ul class="text-center">
-                <li>
-                    <label for="name">Nombre:</label><br>
-                    <input type="text" id="name">
-                </li>
-                <li>
-                    <label for="correo">Correo electrónico:</label><br>
-                    <input type="email" id="correo">
-                </li>
-                <li>
-                    <label for="comentarios">Comentario:</label><br>
-                    <textarea name="areatexto" id="comentarios" cols="30" rows="10"></textarea>
-                </li>
-                <br>
-                <input type="submit" value="Enviar">
+        <form class="formulario container text-center">
+            <ul class="row row-cols-1">
+                <div class="col">
+                    <li>
+                        <label for="name">Nombre:</label><br>
+                        <input type="text" id="name">
+                    </li>
+                </div>
+                <div class="col">
+                    <li>
+                        <label for="correo">Correo electrónico:</label><br>
+                        <input type="email" id="correo">
+                    </li>
+                </div>
+                <div class="col">
+                    <li>
+                        <label for="comentarios">Comentario:</label><br>
+                        <textarea name="areatexto" id="comentarios" cols="30" rows="10"></textarea>
+                    </li>
+                </div>
+                <div class="botonForm col">
+                    <input type="submit" value="Enviar">
+                </div>
             </ul>
         </form>
 
     </main>
     <footer class="footer container">
-        <div class="row">
-            <div class="contenedorSocialMedia justify-content-center">
+        <div class="row row-cols-1 row-cols-lg-2">
+            <div class="contenedorSocialMedia col justify-content-center align-items-center justify-content-lg-start">
                 <div class="socialMediaIcon">
                     <a href="#">
                         <svg fill="#ffffff" height="40px" width="40px" version="1.1" id="Layer_1"
@@ -194,7 +201,7 @@
                     </a>
                 </div>
             </div>
-            <div class="contenedorRes justify-content-center">
+            <div class="contenedorRes col justify-content-center justify-content-lg-end">
                 <div class="contenedorReserved">
                     <img src="./img/palm.png" alt="imglogo">
                     <p>Todos los derechos reservados.</p>
