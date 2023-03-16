@@ -109,11 +109,10 @@ h2{
 
 .barraNavegacion a {
     padding: 1rem 4rem;
-    border-right: 1px #2a2a2a solid;
 }
 
 .tituloH1 {
-    
+    margin: 3rem auto;
     text-align: center;
     grid-area: titulo;
 }
@@ -176,7 +175,6 @@ h2{
 }
 
 .footer {
-    display: grid;
     align-items: center;
     width: 100%;
     margin-top: 10rem;
@@ -184,10 +182,6 @@ h2{
     padding: 2rem;
     grid-template-areas: 
     "recerved smedia";
-}
-
-.footer .contenedorSocialMedia{
-    justify-content: flex-end;
 }
 
 .footer img {
@@ -198,6 +192,7 @@ h2{
 .contenedorRes{
     display: flex;
     justify-content: flex-start;
+    margin-top: 2rem;
 }
 
 .contenedorReserved {
@@ -318,8 +313,6 @@ h2{
     width: 30rem;
 }
 .formulario textarea{
-    max-width: 100%;
-    min-width: 100%;
     min-height: 20rem;
     font-size: 2rem;
 }
@@ -329,11 +322,12 @@ h2{
 }
 
 .formulario ul{
-    padding-right: 4rem;
+    padding: 0;
+    list-style-type: none;
 }
 
 .formulario{
-    width: 70rem;
-    margin: 0 auto;border: 0.5rem solid;
+    margin: 0 auto;
+    border: 0.5rem solid;
     border-image: linear-gradient(to bottom, rgba(0,0,0,0), #c9e265, rgba(0,0,0,0))1 100%;
 }
