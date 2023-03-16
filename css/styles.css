@@ -86,9 +86,8 @@ h2{
 }
 
 
-.barraNavegacion {
+.barraNavegacion{
     width: 100%;
-    display: flex;
     margin: 0 auto;
     justify-content: center;
     background-color: black;
@@ -311,7 +310,7 @@ h2{
 }
 .formulario input{
     width: 30rem;
-    margin-top: 2rem;
+    margin-top: 2remgit;
 }
 .formulario textarea{
     min-height: 20rem;
