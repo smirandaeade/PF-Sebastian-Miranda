@@ -311,6 +311,7 @@ h2{
 }
 .formulario input{
     width: 30rem;
+    margin-top: 2rem;
 }
 .formulario textarea{
     min-height: 20rem;
