@@ -103,6 +103,9 @@ h2 {
 .barraNavegacion p {
   margin: 0 auto;
 }
+.barraNavegacion p:hover {
+  color: #c9e265;
+}
 .barraNavegacion:last-child {
   border-right: none;
 }
@@ -304,13 +307,13 @@ h2 {
   border: 0.5rem solid;
   border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #c9e265, rgba(0, 0, 0, 0)) 1 100%;
 }
+.formulario label,
+.formulario input {
+  font-size: 2rem;
+}
 .formulario label {
   width: 90%;
   text-align: start;
-}
-.formulario label,
-.formulario input {
-  font-size: 22rem;
 }
 .formulario input,
 .formulario textarea {

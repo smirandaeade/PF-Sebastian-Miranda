@@ -118,6 +118,10 @@ h2 {
 
     p {
         margin: 0 auto;
+
+        &:hover {
+            color: #c9e265;
+        }
     }
 
     &:last-child {
@@ -357,14 +361,14 @@ h2 {
     border: 0.5rem solid;
     border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #c9e265, rgba(0, 0, 0, 0))1 100%;
 
+    label,
+    input {
+        font-size: 2rem;
+    }
+
     label {
         width: 90%;
         text-align: start;
-    }
-
-    label,
-    input {
-        font-size: 22rem;
     }
 
     input,
