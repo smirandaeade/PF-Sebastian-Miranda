@@ -1,3 +1,6 @@
+/*variables*/
+$linea-vertical-verde: linear-gradient(to bottom, rgba(0, 0, 0, 0), #c9e265, rgba(0, 0, 0, 0))1 100%;
+
 * {
     box-sizing: border-box;
     font-size: 62.5%;
@@ -159,7 +162,7 @@ h2 {
         align-items: center;
         border: 0.5rem solid;
         padding: 2rem;
-        border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #c9e265, rgba(0, 0, 0, 0))1 100%;
+        border-image: $linea-vertical-verde;
 
         p {
             padding: 0 1rem;
@@ -255,7 +258,7 @@ h2 {
     text-align: center;
     border: 0.5rem solid;
     padding: 2rem;
-    border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #c9e265, rgba(0, 0, 0, 0))1 100%;
+    border-image: $linea-vertical-verde;
 
     &__infoMenu {
         display: inline-block;
@@ -280,7 +283,7 @@ h2 {
     text-align: center;
     border: 0.5rem solid;
     padding: 2rem;
-    border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #c9e265, rgba(0, 0, 0, 0))1 100%;
+    border-image: $linea-vertical-verde;
 
     img {
         width: 20rem;
@@ -309,7 +312,7 @@ h2 {
     margin: 0 auto;
     text-align: center;
     border: 0.5rem solid;
-    border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #c9e265, rgba(0, 0, 0, 0))1 100%;
+    border-image: $linea-vertical-verde;
 
     iframe {
         padding: 3rem;
@@ -323,7 +326,7 @@ h2 {
     padding: 0 3rem;
     margin: 10rem auto;
     border: 0.5rem solid;
-    border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #c9e265, rgba(0, 0, 0, 0))1 100%;
+    border-image: $linea-vertical-verde;
 
     p {
         text-align: justify;
@@ -359,7 +362,7 @@ h2 {
     max-width: 80%;
     margin: 0 auto;
     border: 0.5rem solid;
-    border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #c9e265, rgba(0, 0, 0, 0))1 100%;
+    border-image: $linea-vertical-verde;
 
     label,
     input {
