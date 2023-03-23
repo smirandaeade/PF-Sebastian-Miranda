@@ -1,0 +1,399 @@
+* {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    color: white;
+    font-family: 'Cinzel', serif;
+}
+
+body {
+    background-color: black;
+    width: 100%;
+    margin: 0 auto;
+}
+
+table {
+    font-size: 5rem;
+    min-width: 20rem;
+    max-width: 50rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+header {
+    border-bottom: 1px #2a2a2a solid;
+}
+
+main {
+    margin-top: 2rem;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 2rem;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+#grid {
+    &Header {
+        display: grid;
+        grid-template-areas:
+            "smedia"
+            "logo";
+        grid-template-rows: 6rem 1fr;
+    }
+
+    &MainIndex {
+        display: grid;
+        grid-template-areas:
+            "nav nav"
+            "foto foto"
+            "titulo titulo"
+            "opinion opinion"
+            "ofrecemos ofrecemos";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 6rem 1fr 10rem 1fr 20rem;
+    }
+}
+
+#gmap_canvas {
+    width: 400px 400px;
+}
+
+/*Iconos de redes sociales*/
+
+.socialMedia {
+    display: flex;
+    grid-area: smedia;
+
+    &__socialMediaIcon {
+        padding: 1rem;
+    }
+}
+
+/*Logo principal*/
+
+.imgLogo {
+    text-align: center;
+    grid-area: logo;
+
+    img {
+        width: 30rem;
+        margin-bottom: 4rem;
+    }
+}
+
+/*Foto index restaurant*/
+
+.widePhoto {
+    width: 100%;
+    height: 50rem;
+    background-image: url(../img/mainphoto.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 60%;
+    grid-area: foto;
+}
+
+/*nav bar*/
+
+.barraNavegacion {
+    width: 100%;
+    background-color: black;
+    top: 0px;
+    position: sticky;
+    padding: 1rem;
+    min-width: 30%;
+    grid-area: nav;
+
+    p {
+        margin: 0 auto;
+    }
+
+    &:last-child {
+        border-right: none;
+    }
+
+    a {
+        padding: 1rem 4rem;
+    }
+}
+
+/*se establece titulo genérico para usar en cada page*/
+
+.tituloH1 {
+    margin: 3rem auto;
+    text-align: center;
+    grid-area: titulo;
+}
+
+/*comentarios de personas sobre el restaurant*/
+
+.contenedorPersonas {
+    display: grid;
+    margin: 5rem 10rem;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    grid-area: opinion;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 1.5rem;
+
+    &__opinion {
+        display: flex;
+        align-items: center;
+        border: 0.5rem solid;
+        padding: 2rem;
+        border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #c9e265, rgba(0, 0, 0, 0))1 100%;
+
+        p {
+            padding: 0 1rem;
+            margin: 0 0;
+        }
+
+        img {
+            width: 9rem;
+        }
+    }
+}
+
+/*boton que redirecciona a nuestro-menu.html*/
+
+.botonMenu {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    grid-area: ofrecemos;
+    justify-content: center;
+    align-content: center;
+
+    button {
+        width: 35rem;
+        padding: 1rem;
+        height: 10rem;
+        font-size: 3rem;
+        align-content: center;
+        margin: 0 auto;
+        text-align: center;
+        background-image: linear-gradient(to bottom right, #c9e265, #8bb74d, #c9e265);
+        border: 0;
+        border-radius: .25rem;
+        color: #fff;
+        cursor: pointer;
+    }
+}
+
+/*footer genérico*/
+
+.footer {
+    align-items: center;
+    width: 100%;
+    margin-top: 10rem;
+    border-top: 1px #2a2a2a solid;
+    padding: 2rem;
+    grid-template-areas:
+        "recerved smedia";
+
+    img {
+        width: 10rem;
+    }
+
+    p {
+        margin: 0 0;
+        font-size: 1.5rem;
+    }
+}
+
+/*"todos los derechos reservados"*/
+
+.contenedorReserved {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 2rem;
+
+    &__reserved {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-area: recerved;
+    }
+}
+
+/*icono del link que redirecciona a whatsapp con position fixed*/
+
+.whatsapp {
+    position: fixed;
+    right: 2rem;
+    top: 2rem;
+    z-index: 1;
+
+    img {
+        width: 7rem;
+    }
+}
+
+/*menu del restaurant con imagenes y descripción*/
+
+.contenedorMenu {
+    max-width: 90%;
+    margin: 5rem auto;
+    text-align: center;
+    border: 0.5rem solid;
+    padding: 2rem;
+    border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #c9e265, rgba(0, 0, 0, 0))1 100%;
+
+    &__infoMenu {
+        display: inline-block;
+        margin: 0 4rem;
+        width: 20rem;
+
+        p {
+            font-size: 1.5rem;
+        }
+
+        img {
+            width: 20rem;
+        }
+    }
+}
+
+/*contenedor con imagenes de momentos en el restaurant*/
+
+.contenedorMomentos {
+    max-width: 90%;
+    margin: 5rem auto;
+    text-align: center;
+    border: 0.5rem solid;
+    padding: 2rem;
+    border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #c9e265, rgba(0, 0, 0, 0))1 100%;
+
+    img {
+        width: 20rem;
+        display: inline-block;
+        margin: 0 4rem;
+    }
+}
+
+/*link a la cuenta de instagram del restaurant*/
+
+.instagramLogo {
+    img {
+        width: 7rem;
+        margin-left: 4rem;
+    }
+
+    * {
+        display: inline-block;
+    }
+}
+
+/*videos de youtube del restaurant*/
+
+.youtubeMedia {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    border: 0.5rem solid;
+    border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #c9e265, rgba(0, 0, 0, 0))1 100%;
+
+    iframe {
+        padding: 3rem;
+    }
+}
+
+/*seccion con información sobre el restaurant*/
+
+.seccionNosotros {
+    max-width: 80%;
+    padding: 0 3rem;
+    margin: 10rem auto;
+    border: 0.5rem solid;
+    border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #c9e265, rgba(0, 0, 0, 0))1 100%;
+
+    p {
+        text-align: justify;
+    }
+
+    h2 {
+        margin-bottom: 5rem;
+    }
+
+    div {
+        margin-bottom: 3rem;
+    }
+}
+
+/*alinear elementos segun se requiera*/
+
+.alignItems {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 5rem;
+    text-align: justify;
+    align-items: center;
+
+    * {
+        width: 50rem;
+    }
+}
+
+/*parametros para formulario de contacto*/
+
+.formulario {
+    max-width: 80%;
+    margin: 0 auto;
+    border: 0.5rem solid;
+    border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #c9e265, rgba(0, 0, 0, 0))1 100%;
+
+    label {
+        width: 90%;
+        text-align: start;
+    }
+
+    label,
+    input {
+        font-size: 22rem;
+    }
+
+    input,
+    textarea {
+        width: 90%;
+        margin: 0 auto;
+        color: black;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    }
+
+    textarea {
+        min-height: 20rem;
+        font-size: 2rem;
+    }
+
+    li {
+        margin-top: 2rem;
+    }
+
+    ul {
+        padding: 0;
+        list-style-type: none;
+    }
+}
+
+/*boton del formulario*/
+
+.botonForm {
+    max-width: 20rem;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
