@@ -159,6 +159,7 @@ h2 {
     justify-content: space-between;
     background-color: #2a2a2a;
     margin: 0 5rem;
+    padding: 0;
   }
 }
 
@@ -270,7 +271,7 @@ h2 {
 .whatsapp {
   position: fixed;
   right: 2rem;
-  top: 2rem;
+  top: 4rem;
   z-index: 2;
 }
 
